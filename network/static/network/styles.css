@@ -1,0 +1,152 @@
+.profile-header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-header h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.profile-header p {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.profile-header .btn {
+    margin-top: 10px;
+}
+
+.profile-stats {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 -2px 5px rgba(255, 255, 255, 0.7) inset;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.card-title {
+    font-size: 1.5em;
+}
+
+.post-timestamp {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.post-content {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.edit-button,
+.save-button,
+.cancel-button,
+.like-button {
+    margin-right: 5px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.post {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 -2px 5px rgba(255, 255, 255, 0.7) inset;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.edit-form {
+    margin-top: 10px;
+}
+
+.edit-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.edit-button {
+    width: 50px;
+    height: 35px;
+}
+
+.save-button{
+    width: 50px;
+    height: 35px;
+}
+
+
+textarea[id^="edit-content"] {
+    width: 365%; /* Prend toute la largeur disponible */
+    height: 175px; /* Hauteur de 200 pixels */
+    padding: 5px; /* Espacement interne */
+    border: 1px solid #007bff; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); /* Ombrage interne */
+    font-size: 16px; /* Taille de la police */
+    line-height: 1.5; /* Hauteur de ligne */
+    resize: vertical; /* Permet de redimensionner verticalement seulement */
+    white-space: pre-wrap;
+    overflow-y: auto; 
+}
+
+  textarea[id^="edit-content"]:hover {
+    border: 2px solid #007bff;
+  }
+
+@keyframes like-pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button.like-button {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: transform 0.3s ease;
+}
+
+button.like-button:focus {
+    outline: none;
+}
+
+button.like-button:hover {
+    color: darkred;
+}
+
+button.like-button.like-animated {
+    animation: like-pulse 0.3s ease;
+}
